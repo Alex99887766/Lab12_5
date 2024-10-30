@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ПП-21 Гнатецький Лабораторна робота 12.5</title>
+</head>	 
+<body>
+<script>  
+"use strict";
+
+document.write("<h2 style='text-align:center'>Лабораторна робота 12.5</h2>");
+
+function displayProperties(obj, objName) {
+    document.write("<h3>Властивості об'єкта " + objName + ":</h3><ul>");
+    for (let property in obj) {
+        document.write("<li><b>" + property + "</b>: " + obj[property] + "</li>");
+    }
+    document.write("</ul><hr>");
+}
+
+displayProperties(document, "document");
+
+displayProperties(window, "window");
+
+displayProperties(navigator, "navigator");
+
+</script>
+</body>
+</html>
+
